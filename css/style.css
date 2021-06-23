@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background: url("../img/time-371226_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover 100vh;
+  /* Wall clock */ }
+  body h1 {
+    text-align: center;
+    /* font-size: 7rem; */
+    text-shadow: 3px 2px 2px white;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.2); }
+    body h1 #currentTime {
+      font-style: normal;
+      color: #beac89;
+      text-shadow: 2px 2px 2px black; }
+  body aside {
+    width: 40%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 30px; }
+    body aside #stopwatchResult {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 50px;
+      background-color: white;
+      margin-bottom: 10px;
+      font-size: 2rem; }
+    body aside .stopwatchButtons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: aqua;
+      width: 100%; }
+      body aside .stopwatchButtons button {
+        width: 33.3%;
+        padding: 10px;
+        text-transform: uppercase;
+        border: none;
+        border: 2px solid #beac89; }
+  body #wall_clock {
+    width: 60%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px; }
+    body #wall_clock .border_div {
+      width: 400px;
+      height: 400px;
+      background-color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0 auto;
+      position: relative; }
+      body #wall_clock .border_div .twelve {
+        position: absolute;
+        top: 0px;
+        left: 46.8%; }
+      body #wall_clock .border_div .six {
+        position: absolute;
+        bottom: 0px;
+        left: 48.5%; }
+      body #wall_clock .border_div .three {
+        position: absolute;
+        bottom: 46.5%;
+        right: 5px; }
+      body #wall_clock .border_div .nine {
+        position: absolute;
+        bottom: 46.5%;
+        left: 5px; }
+      body #wall_clock .border_div .clock {
+        width: 350px;
+        height: 350px;
+        background-color: burlywood;
+        border-radius: 25%;
+        position: relative; }
+        body #wall_clock .border_div .clock .dot {
+          background-color: red;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 47.3%;
+          left: 47.3%;
+          border-radius: 50%;
+          z-index: 1; }
+        body #wall_clock .border_div .clock .hand {
+          height: 6px;
+          width: 50%;
+          background: black;
+          position: absolute;
+          top: 49%;
+          -webkit-transform-origin: 100%;
+                  transform-origin: 100%;
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg);
+          -webkit-transition: all 0.05s;
+          transition: all 0.05s;
+          -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+                  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); }
+
+/*# sourceMappingURL=style.css.map */

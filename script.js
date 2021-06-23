@@ -81,3 +81,23 @@ btnReset.addEventListener('click', () => {
     h3StopwatchResult.innerHTML = ` `;
 });
 
+// Wall clock
+let divHour = document.querySelector('.hour');
+let divMinute = document.querySelector('.minute');
+let divSecond = document.querySelector('.second');
+
+setInterval(() => {
+    let date = new Date();
+
+    let sec = date.getSeconds();
+    let secDeg = sec / 60 * 360 + 90;
+    let hour = date.getHours();
+    let min = date.getMinutes();
+
+    let hourDeg = hour / 12 * 360 + 90;
+    let minDeg = min / 60 * 360 + 90;
+
+    divSecond.style.transform = `rotate(${secDeg}deg)`;
+    divHour.style.transform = `rotate(${hourDeg}deg)`;
+    divMinute.style.transform = `rotate(${minDeg}deg)`;
+}, 1000);
