@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kirang+Haerang&family=Shadows+Into+Light&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +50,6 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      background-color: aqua;
       width: 100%; }
       body aside .stopwatchButtons button {
         width: 33.3%;
@@ -63,9 +63,9 @@ body {
     text-align: center;
     padding-top: 50px; }
     body #wall_clock .border_div {
-      width: 400px;
-      height: 400px;
-      background-color: white;
+      width: 450px;
+      height: 450px;
+      background: url("../img/metalic.jpg");
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -76,51 +76,85 @@ body {
           -ms-flex-align: center;
               align-items: center;
       margin: 0 auto;
-      position: relative; }
+      position: relative;
+      border-radius: 50%;
+      border: 15px solid black; }
+      body #wall_clock .border_div .half_clock {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(95, 158, 160, 0.11);
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        -webkit-box-shadow: 1px 1px 10px white;
+                box-shadow: 1px 1px 10px white; }
+        body #wall_clock .border_div .half_clock .half_of_half {
+          width: 52.5%;
+          background-color: rgba(0, 0, 0, 0.87);
+          height: 50%;
+          position: relative; }
+        body #wall_clock .border_div .half_clock .half_of_half:first-child {
+          background-color: rgba(255, 255, 255, 0.95);
+          width: 60%;
+          height: 45%;
+          border-width: 40%; }
+        body #wall_clock .border_div .half_clock .half_of_half:last-child {
+          height: 60%; }
+      body #wall_clock .border_div .num {
+        font-size: 1.9rem;
+        font-weight: 900;
+        font-family: 'Shadows Into Light', cursive; }
       body #wall_clock .border_div .twelve {
         position: absolute;
-        top: 0px;
-        left: 46.8%; }
+        top: -5px;
+        left: 47.8%; }
       body #wall_clock .border_div .six {
         position: absolute;
-        bottom: 0px;
-        left: 48.5%; }
+        bottom: -5px;
+        left: 48.5%;
+        color: white; }
       body #wall_clock .border_div .three {
         position: absolute;
-        bottom: 46.5%;
-        right: 5px; }
+        bottom: 43.5%;
+        right: 7px;
+        text-shadow: 1px 1px 5px white; }
       body #wall_clock .border_div .nine {
         position: absolute;
-        bottom: 46.5%;
-        left: 5px; }
-      body #wall_clock .border_div .clock {
-        width: 350px;
-        height: 350px;
-        background-color: burlywood;
-        border-radius: 25%;
-        position: relative; }
-        body #wall_clock .border_div .clock .dot {
-          background-color: red;
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          top: 47.3%;
-          left: 47.3%;
+        bottom: 43.5%;
+        left: 7px;
+        color: white; }
+      body #wall_clock .border_div .clock_wrapp {
+        position: absolute; }
+        body #wall_clock .border_div .clock_wrapp .clock {
+          width: 350px;
+          height: 350px;
+          background-color: transparent;
           border-radius: 50%;
-          z-index: 1; }
-        body #wall_clock .border_div .clock .hand {
-          height: 6px;
-          width: 50%;
-          background: black;
-          position: absolute;
-          top: 49%;
-          -webkit-transform-origin: 100%;
-                  transform-origin: 100%;
-          -webkit-transform: rotate(90deg);
-                  transform: rotate(90deg);
-          -webkit-transition: all 0.05s;
-          transition: all 0.05s;
-          -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-                  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); }
+          position: relative; }
+          body #wall_clock .border_div .clock_wrapp .clock .dot {
+            background: url("../img/metalic1.jpg");
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 47.3%;
+            left: 47.3%;
+            border-radius: 50%;
+            z-index: 1; }
+          body #wall_clock .border_div .clock_wrapp .clock .hand {
+            height: 6px;
+            width: 50%;
+            background: black;
+            position: absolute;
+            top: 49%;
+            -webkit-transform-origin: 100%;
+                    transform-origin: 100%;
+            -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+            -webkit-transition: all 0.05s;
+            transition: all 0.05s;
+            -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+                    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+            -webkit-box-shadow: 1px 0px 10px white;
+                    box-shadow: 1px 0px 10px white; }
 
 /*# sourceMappingURL=style.css.map */

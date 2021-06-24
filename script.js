@@ -91,7 +91,7 @@ setInterval(() => {
 
     let sec = date.getSeconds();
     let secDeg = sec / 60 * 360 + 90;
-    let hour = date.getHours();
+    let hour = date.getHours() + 1;
     let min = date.getMinutes();
 
     let hourDeg = hour / 12 * 360 + 90;
