@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kirang+Haerang&family=Shadows+Into+Light&display=swap");
+@font-face {
+  font-family: 'Digital Numbers Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Digital Numbers Regular"), url("DigitalNumbers-Regular.woff") format("woff"); }
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +17,9 @@ body {
   /* Wall clock */ }
   body h1 {
     text-align: center;
-    /* font-size: 7rem; */
-    text-shadow: 3px 2px 2px white;
-    font-style: italic;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 3px solid rgba(0, 0, 0, 0.2); }
+    /* font-size: 7rem; */ }
     body h1 #currentTime {
+      font-family: 'DigitalNumbers-Regular';
       font-style: normal;
       color: #beac89;
       text-shadow: 2px 2px 2px black; }
