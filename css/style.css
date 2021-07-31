@@ -7,12 +7,24 @@
           box-sizing: border-box; }
 
 body {
-  background: url("../img/time-371226_1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover 100vh;
   /* Wall clock */ }
   body header {
-    background-color: burlywood; }
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-transition: 1s ease;
+    transition: 1s ease; }
+    body header:hover {
+      background-color: #000;
+      -webkit-transition: 1s ease;
+      transition: 1s ease; }
+      body header:hover nav ul li a {
+        color: #fff;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        text-shadow: 1px 1px 1px gray; }
     body header nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -24,14 +36,14 @@ body {
           -ms-flex-align: center;
               align-items: center; }
       body header nav ul li {
-        list-style: none;
-        background-color: cadetblue; }
+        list-style: none; }
         body header nav ul li a {
           text-decoration: none;
-          border: 1px solid greenyellow;
           overflow: hidden;
           display: block;
-          padding: 20px; }
+          padding: 20px;
+          color: #000;
+          font-size: 1.3rem; }
   body .current {
     background-image: url("../img/matrix-356024_1920.jpg");
     min-height: 100vh;
@@ -220,6 +232,9 @@ body {
   body #stopwatch #stopwatchWrapp {
     width: 90%; } }
 @media screen and (max-width: 567px) {
+  body header nav ul li a {
+    font-size: 0.9rem;
+    padding: 20px 10px; }
   body .current h1 {
     font-size: 1.9rem;
     -webkit-box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6);
@@ -228,6 +243,7 @@ body {
   body .current h1 {
     font-size: 1.3rem; }
   body #stopwatch #stopwatchWrapp {
-    width: 99%; } }
+    width: 99%;
+    margin-top: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
