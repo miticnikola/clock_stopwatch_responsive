@@ -127,10 +127,18 @@ body {
           border: none;
           border: 2px solid #beac89; }
   body #wall_clock {
-    width: 60%;
+    width: 100%;
     height: 100vh;
-    text-align: center;
-    padding-top: 50px; }
+    background-color: aquamarine;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     body #wall_clock .border_div {
       width: 450px;
       height: 450px;
@@ -238,7 +246,34 @@ body {
   body .current h1 {
     font-size: 1.9rem;
     -webkit-box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6);
-            box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6); } }
+            box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6); }
+  body #wall_clock {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body #wall_clock .border_div {
+      width: 350px;
+      height: 350px;
+      border: 7px solid black; }
+      body #wall_clock .border_div .num {
+        font-size: 1.5rem; }
+      body #wall_clock .border_div .clock_wrapp .clock {
+        width: 250px;
+        height: 250px; }
+        body #wall_clock .border_div .clock_wrapp .clock .dot {
+          width: 10px;
+          height: 10px; }
+        body #wall_clock .border_div .clock_wrapp .clock .hand {
+          height: 5px; } }
 @media screen and (max-width: 415px) {
   body .current h1 {
     font-size: 1.3rem; }
