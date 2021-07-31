@@ -101,6 +101,8 @@ body {
       background-color: white;
       margin-bottom: 10px;
       font-size: 2rem;
+      font-family: "Orbitron", sans-serif;
+
     }
     .stopwatchButtons {
       display: flex;
@@ -233,6 +235,11 @@ body {
         font-size: 2.5rem;
       }
     }
+    #stopwatch {
+        #stopwatchWrapp {
+            width: 90%;
+        }
+    }
   }
 }
 
@@ -253,6 +260,11 @@ body {
       h1 {
         font-size: 1.3rem;
       }
+    }
+    #stopwatch {
+        #stopwatchWrapp {
+            width: 99%;
+        }
     }
   }
 }

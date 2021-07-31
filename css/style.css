@@ -101,7 +101,8 @@ body {
         height: 50px;
         background-color: white;
         margin-bottom: 10px;
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-family: "Orbitron", sans-serif; }
       body #stopwatch #stopwatchWrapp .stopwatchButtons {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -215,7 +216,9 @@ body {
 
 @media screen and (max-width: 991px) {
   body .current h1 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  body #stopwatch #stopwatchWrapp {
+    width: 90%; } }
 @media screen and (max-width: 567px) {
   body .current h1 {
     font-size: 1.9rem;
@@ -223,6 +226,8 @@ body {
             box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6); } }
 @media screen and (max-width: 415px) {
   body .current h1 {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  body #stopwatch #stopwatchWrapp {
+    width: 99%; } }
 
 /*# sourceMappingURL=style.css.map */

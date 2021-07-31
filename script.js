@@ -38,6 +38,7 @@ let btnReset = document.getElementById("reset");
 
 let clock = null;
 let counter = 0;
+h3StopwatchResult.innerHTML = `0`;
 
 btnStart.addEventListener('click', () => {
     if(clock == null){
