@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kirang+Haerang&family=Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 // font-family: 'Amatic SC', cursive;
 // font-family: 'Indie Flower', cursive;
 // font-family: 'Kirang Haerang', cursive;
@@ -21,26 +21,54 @@ body {
     background-repeat: no-repeat;
     background-size: cover 100vh;
     
-    h1 {
-        text-align: center;
-        /* font-size: 7rem; */
-        // text-shadow: 3px 2px 2px white;
-        // font-style: italic;
-        // background-color: rgba(0, 0, 0, 0.4);
-        // width: 50%;
-        // margin: 0 auto;
-        // margin-top: 20px;
-        // border-radius: 10px;
-        // border: 3px solid rgba(0, 0, 0, 0.2);
-    
-        #currentTime {
-            font-family: 'DigitalNumbers-Regular';
-            font-style: normal;
-            color: #beac89;
-            text-shadow: 2px 2px 2px black;
+    header {
+        background-color: burlywood;
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    list-style: none;
+                    background-color: cadetblue;
+                    // padding: 20px;
+                    // border: 1px solid green;
+                    a {
+                        text-decoration: none;
+                        border: 1px solid greenyellow;
+                        overflow: hidden;
+                        display: block;
+                        padding: 20px;
+                    }
+                }
+            }
         }
     }
-    
+
+    // Digital current time
+    .current {
+        h1 {
+            text-align: center;
+            /* font-size: 7rem; */
+            // text-shadow: 3px 2px 2px white;
+            // font-style: italic;
+            // background-color: rgba(0, 0, 0, 0.4);
+            // width: 50%;
+            // margin: 0 auto;
+            // margin-top: 20px;
+            // border-radius: 10px;
+            // border: 3px solid rgba(0, 0, 0, 0.2);
+        
+            #currentTime {
+                font-family: 'DigitalNumbers-Regular';
+                font-style: normal;
+                color: #beac89;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+    }
+
+    // Aside -- stopwatch
     aside {
         width: 40%;
         height: 100%;
