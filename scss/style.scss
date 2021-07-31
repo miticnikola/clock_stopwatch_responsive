@@ -4,12 +4,20 @@
 // font-family: 'Indie Flower', cursive;
 // font-family: 'Kirang Haerang', cursive;
 
-@font-face {
-  font-family: "Digital Numbers Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Digital Numbers Regular"),
-    url("DigitalNumbers-Regular.woff") format("woff");
+// Variables
+
+// Mixins
+@mixin paralax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin centeredFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -46,15 +54,9 @@ body {
 
   // Digital current time
   .current {
-    min-height: 300px;
     background-image: url("../img/matrix-356024_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include paralax;
+    @include centeredFlex;
     h1 {
       text-align: center;
       font-size: 4rem;
@@ -75,16 +77,22 @@ body {
     }
   }
 
-  // Aside -- stopwatch
-  aside {
-    width: 40%;
-    height: 100%;
-    float: right;
-    text-align: center;
-    margin-top: 30px;
-    padding-right: 30px;
+  // Stopwatch section
+  #stopwatch {
+    // width: 100%;
+    // height: 100vh;
+    // text-align: center;
     // background-color: aqua;
-
+    background-image: url('../img/active-948798_1920.jpg');
+    @include paralax;
+    @include centeredFlex;
+    align-items: flex-start;
+    #stopwatchWrapp {
+        width: 60%;
+        background-color: rgba($color: red, $alpha: 0.5);
+        margin: 0 auto;
+        margin-top: 500px;
+        padding: 10px;
     #stopwatchResult {
       display: flex;
       justify-content: center;
@@ -105,6 +113,7 @@ body {
         border: none;
         border: 2px solid #beac89;
       }
+    }
     }
   }
 
