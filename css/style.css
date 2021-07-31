@@ -37,14 +37,38 @@ body {
           overflow: hidden;
           display: block;
           padding: 20px; }
-  body .current h1 {
-    text-align: center;
-    /* font-size: 7rem; */ }
-    body .current h1 #currentTime {
-      font-family: 'DigitalNumbers-Regular';
-      font-style: normal;
-      color: #beac89;
-      text-shadow: 2px 2px 2px black; }
+  body .current {
+    min-height: 300px;
+    background-image: url("../img/matrix-356024_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body .current h1 {
+      text-align: center;
+      /* font-size: 7rem; */
+      font-size: 4rem;
+      font-family: 'Orbitron', sans-serif;
+      background-color: rgba(0, 128, 0, 0.6);
+      padding: 30px 50px;
+      border-radius: 5px;
+      text-shadow: 1px 2px 2px #65e06c;
+      -webkit-box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6);
+      box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6); }
+      body .current h1 #currentTime {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
+        color: #000;
+        letter-spacing: 4px; }
   body aside {
     width: 40%;
     height: 100%;
