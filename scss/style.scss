@@ -26,220 +26,219 @@ $digitFont: "Orbitron", sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  header {
-    background-color: rgba($color: #fff, $alpha: 0.75);
-    position: fixed;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 900;
-    transition: 1s ease;
-    &:hover {
-      background-color: #000;
+
+html {
+  scroll-behavior: smooth;
+  body {
+    header {
+      background-color: rgba($color: #fff, $alpha: 0.75);
+      position: fixed;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 900;
       transition: 1s ease;
+    //   Effects for hovered nav and hovered header
+      &:hover {
+        background-color: #000;
+        transition: 1s ease;
+        nav {
+          ul {
+            li {
+              a {
+                color: #fff;
+                transition: 0.5s ease;
+                text-shadow: 1px 1px 1px gray;
+              }
+            }
+          }
+        }
+      }
 
       nav {
         ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
           li {
+            list-style: none;
             a {
-              color: #fff;
-              transition: 0.5s ease;
-              text-shadow: 1px 1px 1px gray;
+              text-decoration: none;
+              overflow: hidden;
+              display: block;
+              padding: 20px;
+              color: #000;
+              font-size: 1.3rem;
             }
           }
         }
       }
     }
-    nav {
-      ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li {
-          list-style: none;
-          //   background-color: cadetblue;
-          a {
-            text-decoration: none;
-            // border: 1px solid greenyellow;
-            overflow: hidden;
-            display: block;
-            padding: 20px;
-            color: #000;
-            font-size: 1.3rem;
+
+    // Digital current time
+    .current {
+      background-image: url("../img/matrix-356024_1920.jpg");
+      @include paralax;
+      @include centeredFlex;
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-family: $digitFont;
+        background-color: rgba($color: green, $alpha: 0.6);
+        padding: 30px 50px;
+        border-radius: 5px;
+        text-shadow: 1px 2px 2px #65e06c;
+        -webkit-box-shadow: 0px 0px 17px 15px rgba($color: #65e06c, $alpha: 0.6);
+        box-shadow: 0px 0px 17px 15px rgba($color: #65e06c, $alpha: 0.6);
+        #currentTime {
+          font-family: $digitFont;
+          font-weight: 900;
+          color: #000;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+    // Stopwatch section
+    #stopwatch {
+      background-image: url("../img/active-948798_1920.jpg");
+      @include paralax;
+      @include centeredFlex;
+      align-items: flex-start;
+      #stopwatchWrapp {
+        width: 60%;
+        background-color: rgba($color: red, $alpha: 0.5);
+        margin: 0 auto;
+        margin-top: 500px;
+        padding: 10px;
+        #stopwatchResult {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          background-color: white;
+          margin-bottom: 10px;
+          font-size: 2rem;
+          font-family: $digitFont;
+        }
+        .stopwatchButtons {
+          display: flex;
+          // background-color: aqua;
+          width: 100%;
+          button {
+            width: 33.3%;
+            padding: 10px;
+            text-transform: uppercase;
+            border: none;
+            border: 2px solid #beac89;
           }
         }
       }
     }
-  }
 
-  // Digital current time
-  .current {
-    background-image: url("../img/matrix-356024_1920.jpg");
-    @include paralax;
-    @include centeredFlex;
-    h1 {
-      text-align: center;
-      font-size: 4rem;
-      font-family: $digitFont;
-      background-color: rgba($color: green, $alpha: 0.6);
-      padding: 30px 50px;
-      border-radius: 5px;
-      text-shadow: 1px 2px 2px #65e06c;
-      -webkit-box-shadow: 0px 0px 17px 15px rgba($color: #65e06c, $alpha: 0.6);
-      box-shadow: 0px 0px 17px 15px rgba($color: #65e06c, $alpha: 0.6);
-
-      #currentTime {
-        font-family: $digitFont;
-        font-weight: 900;
-        color: #000;
-        letter-spacing: 4px;
-      }
-    }
-  }
-
-  // Stopwatch section
-  #stopwatch {
-    // width: 100%;
-    // height: 100vh;
-    // text-align: center;
-    // background-color: aqua;
-    background-image: url("../img/active-948798_1920.jpg");
-    @include paralax;
-    @include centeredFlex;
-    align-items: flex-start;
-    #stopwatchWrapp {
-      width: 60%;
-      background-color: rgba($color: red, $alpha: 0.5);
-      margin: 0 auto;
-      margin-top: 500px;
-      padding: 10px;
-      #stopwatchResult {
+    /* Wall clock */
+    #wall_clock {
+      width: 100%;
+      height: 100vh;
+      background: url("../img/wall-2588813_1920.jpg"); // text-align: center;
+      @include centeredFlex;
+      // margin-right: 0;    // padding-top: 50px;
+      top: 10px;
+      .border_div {
+        width: 450px;
+        height: 450px;
+        background: url("../img/metalic.jpg");
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;
-        background-color: white;
-        margin-bottom: 10px;
-        font-size: 2rem;
-        font-family: $digitFont;
-      }
-      .stopwatchButtons {
-        display: flex;
-        // background-color: aqua;
-        width: 100%;
-        button {
-          width: 33.3%;
-          padding: 10px;
-          text-transform: uppercase;
-          border: none;
-          border: 2px solid #beac89;
-        }
-      }
-    }
-  }
-
-  /* Wall clock */
-  #wall_clock {
-    width: 100%;
-    height: 100vh;
-    background: url('../img/wall-2588813_1920.jpg');    // text-align: center;
-    @include centeredFlex;
-    // margin-right: 0;    // padding-top: 50px;
-    top: 10px;
-    .border_div {
-      width: 450px;
-      height: 450px;
-      background: url("../img/metalic.jpg");
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      border-radius: 50%;
-      border: 15px solid black;
-      margin-top: -300px;
-      .half_clock {
-        height: 100%;
-        width: 100%;
-        background-color: rgba($color: #5f9ea0, $alpha: 0.11);
         position: relative;
         border-radius: 50%;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px white;
-        .half_of_half {
-          width: 52.5%;
-          background-color: rgba($color: #000000, $alpha: 0.87);
-          height: 50%;
+        border: 15px solid black;
+        margin-top: -300px;
+        .half_clock {
+          height: 100%;
+          width: 100%;
+          background-color: rgba($color: #5f9ea0, $alpha: 0.11);
           position: relative;
-        }
-        .half_of_half:first-child {
-          background-color: rgba($color: #ffffff, $alpha: 0.95);
-          width: 60%;
-          height: 45%;
-          border-width: 40%;
-        }
-        .half_of_half:last-child {
-          height: 60%;
-        }
-      }
-      .num {
-        font-size: 1.9rem;
-        font-weight: 900;
-        font-family: "Shadows Into Light", cursive;
-      }
-      .twelve {
-        position: absolute;
-        top: -5px;
-        left: 47.8%;
-      }
-      .six {
-        position: absolute;
-        bottom: -5px;
-        left: 48.5%;
-        color: rgb(255, 255, 255);
-      }
-      .three {
-        position: absolute;
-        bottom: 43.5%;
-        right: 7px;
-        text-shadow: 1px 1px 5px white;
-      }
-      .nine {
-        position: absolute;
-        bottom: 43.5%;
-        left: 7px;
-        color: white;
-      }
-
-      .clock_wrapp {
-        position: absolute;
-        .clock {
-          width: 350px;
-          height: 350px;
-          background-color: transparent;
           border-radius: 50%;
-          position: relative;
-          .dot {
-            background: url("../img/metalic1.jpg");
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 47.3%;
-            left: 47.3%;
-            border-radius: 50%;
-            z-index: 1;
-            // box-shadow: 1px 0px 10px white;
+          overflow: hidden;
+          box-shadow: 1px 1px 10px white;
+          .half_of_half {
+            width: 52.5%;
+            background-color: rgba($color: #000000, $alpha: 0.87);
+            height: 50%;
+            position: relative;
           }
-          .hand {
-            height: 6px;
-            width: 50%;
-            background: black;
-            position: absolute;
-            top: 49%;
-            transform-origin: 100%;
-            transform: rotate(90deg);
-            transition: all 0.05s;
-            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-            box-shadow: 1px 0px 10px white;
+          .half_of_half:first-child {
+            background-color: rgba($color: #ffffff, $alpha: 0.95);
+            width: 60%;
+            height: 45%;
+            border-width: 40%;
+          }
+          .half_of_half:last-child {
+            height: 60%;
+          }
+        }
+        .num {
+          font-size: 1.9rem;
+          font-weight: 900;
+          font-family: "Shadows Into Light", cursive;
+        }
+        .twelve {
+          position: absolute;
+          top: -5px;
+          left: 47.8%;
+        }
+        .six {
+          position: absolute;
+          bottom: -5px;
+          left: 48.5%;
+          color: rgb(255, 255, 255);
+        }
+        .three {
+          position: absolute;
+          bottom: 43.5%;
+          right: 7px;
+          text-shadow: 1px 1px 5px white;
+        }
+        .nine {
+          position: absolute;
+          bottom: 43.5%;
+          left: 7px;
+          color: white;
+        }
+
+        .clock_wrapp {
+          position: absolute;
+          .clock {
+            width: 350px;
+            height: 350px;
+            background-color: transparent;
+            border-radius: 50%;
+            position: relative;
+            .dot {
+              background: url("../img/metalic1.jpg");
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 47.3%;
+              left: 47.3%;
+              border-radius: 50%;
+              z-index: 1;
+              // box-shadow: 1px 0px 10px white;
+            }
+            .hand {
+              height: 6px;
+              width: 50%;
+              background: black;
+              position: absolute;
+              top: 49%;
+              transform-origin: 100%;
+              transform: rotate(90deg);
+              transition: all 0.05s;
+              transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+              box-shadow: 1px 0px 10px white;
+            }
           }
         }
       }
@@ -284,11 +283,11 @@ body {
       }
     }
     #wall_clock {
-    //   width: 100%;
-    //   height: 100vh;
-    //   background-color: aquamarine;
+      //   width: 100%;
+      //   height: 100vh;
+      //   background-color: aquamarine;
       // text-align: center;
-    //   @include centeredFlex;
+      //   @include centeredFlex;
       // padding-top: 50px;
       .border_div {
         width: 350px;
