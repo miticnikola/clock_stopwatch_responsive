@@ -17,12 +17,13 @@ body {
     width: 100%;
     text-transform: uppercase;
     font-weight: 900;
-    -webkit-transition: 1s ease;
-    transition: 1s ease; }
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    z-index: 999; }
     body header:hover {
       background-color: #000;
-      -webkit-transition: 1s ease;
-      transition: 1s ease; }
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
       body header:hover nav ul li a {
         color: #fff;
         -webkit-transition: 0.5s ease;
@@ -37,8 +38,7 @@ body {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      z-index: 1; }
+              align-items: center; }
       body header nav ul li {
         list-style: none; }
         body header nav ul li a {
@@ -255,7 +255,8 @@ body {
   body #wall_clock .border_div {
     width: 350px;
     height: 350px;
-    border: 7px solid black; }
+    border: 7px solid black;
+    margin-top: -120px; }
     body #wall_clock .border_div .num {
       font-size: 1.5rem; }
     body #wall_clock .border_div .clock_wrapp .clock {
