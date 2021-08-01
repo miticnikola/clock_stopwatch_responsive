@@ -29,6 +29,7 @@ $digitFont: "Orbitron", sans-serif;
 
 html {
   scroll-behavior: smooth;
+}
   body {
     header {
       background-color: rgba($color: #fff, $alpha: 0.75);
@@ -244,7 +245,6 @@ html {
       }
     }
   }
-}
 
 // Media queries
 @media screen and (max-width: 991px) {

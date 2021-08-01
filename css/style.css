@@ -8,52 +8,27 @@
 
 html {
   scroll-behavior: smooth; }
-  html body {
-    /* Wall clock */ }
-    html body header {
-      background-color: rgba(255, 255, 255, 0.75);
-      position: fixed;
-      width: 100%;
-      text-transform: uppercase;
-      font-weight: 900;
+
+body {
+  /* Wall clock */ }
+  body header {
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-transition: 1s ease;
+    transition: 1s ease; }
+    body header:hover {
+      background-color: #000;
       -webkit-transition: 1s ease;
       transition: 1s ease; }
-      html body header:hover {
-        background-color: #000;
-        -webkit-transition: 1s ease;
-        transition: 1s ease; }
-        html body header:hover nav ul li a {
-          color: #fff;
-          -webkit-transition: 0.5s ease;
-          transition: 0.5s ease;
-          text-shadow: 1px 1px 1px gray; }
-      html body header nav ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        z-index: 1; }
-        html body header nav ul li {
-          list-style: none; }
-          html body header nav ul li a {
-            text-decoration: none;
-            overflow: hidden;
-            display: block;
-            padding: 20px;
-            color: #000;
-            font-size: 1.3rem; }
-    html body .current {
-      background-image: url("../img/matrix-356024_1920.jpg");
-      min-height: 100vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      body header:hover nav ul li a {
+        color: #fff;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        text-shadow: 1px 1px 1px gray; }
+    body header nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -62,91 +37,74 @@ html {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
-      html body .current h1 {
-        text-align: center;
-        font-size: 4rem;
-        font-family: "Orbitron", sans-serif;
-        background-color: rgba(0, 128, 0, 0.6);
-        padding: 30px 50px;
-        border-radius: 5px;
-        text-shadow: 1px 2px 2px #65e06c;
-        -webkit-box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6);
-        box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6); }
-        html body .current h1 #currentTime {
-          font-family: "Orbitron", sans-serif;
-          font-weight: 900;
+              align-items: center;
+      z-index: 1; }
+      body header nav ul li {
+        list-style: none; }
+        body header nav ul li a {
+          text-decoration: none;
+          overflow: hidden;
+          display: block;
+          padding: 20px;
           color: #000;
-          letter-spacing: 4px; }
-    html body #stopwatch {
-      background-image: url("../img/active-948798_1920.jpg");
-      min-height: 100vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
-      html body #stopwatch #stopwatchWrapp {
-        width: 60%;
-        background-color: rgba(255, 0, 0, 0.5);
-        margin: 0 auto;
-        margin-top: 500px;
-        padding: 10px; }
-        html body #stopwatch #stopwatchWrapp #stopwatchResult {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          height: 50px;
-          background-color: white;
-          margin-bottom: 10px;
-          font-size: 2rem;
-          font-family: "Orbitron", sans-serif; }
-        html body #stopwatch #stopwatchWrapp .stopwatchButtons {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          width: 100%; }
-          html body #stopwatch #stopwatchWrapp .stopwatchButtons button {
-            width: 33.3%;
-            padding: 10px;
-            text-transform: uppercase;
-            border: none;
-            border: 2px solid #beac89; }
-    html body #wall_clock {
-      width: 100%;
-      height: 100vh;
-      background: url("../img/wall-2588813_1920.jpg");
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      top: 10px; }
-      html body #wall_clock .border_div {
-        width: 450px;
-        height: 450px;
-        background: url("../img/metalic.jpg");
+          font-size: 1.3rem; }
+  body .current {
+    background-image: url("../img/matrix-356024_1920.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body .current h1 {
+      text-align: center;
+      font-size: 4rem;
+      font-family: "Orbitron", sans-serif;
+      background-color: rgba(0, 128, 0, 0.6);
+      padding: 30px 50px;
+      border-radius: 5px;
+      text-shadow: 1px 2px 2px #65e06c;
+      -webkit-box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6);
+      box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6); }
+      body .current h1 #currentTime {
+        font-family: "Orbitron", sans-serif;
+        font-weight: 900;
+        color: #000;
+        letter-spacing: 4px; }
+  body #stopwatch {
+    background-image: url("../img/active-948798_1920.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    body #stopwatch #stopwatchWrapp {
+      width: 60%;
+      background-color: rgba(255, 0, 0, 0.5);
+      margin: 0 auto;
+      margin-top: 500px;
+      padding: 10px; }
+      body #stopwatch #stopwatchWrapp #stopwatchResult {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -156,87 +114,130 @@ html {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        height: 50px;
+        background-color: white;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        font-family: "Orbitron", sans-serif; }
+      body #stopwatch #stopwatchWrapp .stopwatchButtons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body #stopwatch #stopwatchWrapp .stopwatchButtons button {
+          width: 33.3%;
+          padding: 10px;
+          text-transform: uppercase;
+          border: none;
+          border: 2px solid #beac89; }
+  body #wall_clock {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/wall-2588813_1920.jpg");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 10px; }
+    body #wall_clock .border_div {
+      width: 450px;
+      height: 450px;
+      background: url("../img/metalic.jpg");
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      border-radius: 50%;
+      border: 15px solid black;
+      margin-top: -300px; }
+      body #wall_clock .border_div .half_clock {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(95, 158, 160, 0.11);
         position: relative;
         border-radius: 50%;
-        border: 15px solid black;
-        margin-top: -300px; }
-        html body #wall_clock .border_div .half_clock {
-          height: 100%;
-          width: 100%;
-          background-color: rgba(95, 158, 160, 0.11);
-          position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 1px 1px 10px white;
+                box-shadow: 1px 1px 10px white; }
+        body #wall_clock .border_div .half_clock .half_of_half {
+          width: 52.5%;
+          background-color: rgba(0, 0, 0, 0.87);
+          height: 50%;
+          position: relative; }
+        body #wall_clock .border_div .half_clock .half_of_half:first-child {
+          background-color: rgba(255, 255, 255, 0.95);
+          width: 60%;
+          height: 45%;
+          border-width: 40%; }
+        body #wall_clock .border_div .half_clock .half_of_half:last-child {
+          height: 60%; }
+      body #wall_clock .border_div .num {
+        font-size: 1.9rem;
+        font-weight: 900;
+        font-family: "Shadows Into Light", cursive; }
+      body #wall_clock .border_div .twelve {
+        position: absolute;
+        top: -5px;
+        left: 47.8%; }
+      body #wall_clock .border_div .six {
+        position: absolute;
+        bottom: -5px;
+        left: 48.5%;
+        color: white; }
+      body #wall_clock .border_div .three {
+        position: absolute;
+        bottom: 43.5%;
+        right: 7px;
+        text-shadow: 1px 1px 5px white; }
+      body #wall_clock .border_div .nine {
+        position: absolute;
+        bottom: 43.5%;
+        left: 7px;
+        color: white; }
+      body #wall_clock .border_div .clock_wrapp {
+        position: absolute; }
+        body #wall_clock .border_div .clock_wrapp .clock {
+          width: 350px;
+          height: 350px;
+          background-color: transparent;
           border-radius: 50%;
-          overflow: hidden;
-          -webkit-box-shadow: 1px 1px 10px white;
-                  box-shadow: 1px 1px 10px white; }
-          html body #wall_clock .border_div .half_clock .half_of_half {
-            width: 52.5%;
-            background-color: rgba(0, 0, 0, 0.87);
-            height: 50%;
-            position: relative; }
-          html body #wall_clock .border_div .half_clock .half_of_half:first-child {
-            background-color: rgba(255, 255, 255, 0.95);
-            width: 60%;
-            height: 45%;
-            border-width: 40%; }
-          html body #wall_clock .border_div .half_clock .half_of_half:last-child {
-            height: 60%; }
-        html body #wall_clock .border_div .num {
-          font-size: 1.9rem;
-          font-weight: 900;
-          font-family: "Shadows Into Light", cursive; }
-        html body #wall_clock .border_div .twelve {
-          position: absolute;
-          top: -5px;
-          left: 47.8%; }
-        html body #wall_clock .border_div .six {
-          position: absolute;
-          bottom: -5px;
-          left: 48.5%;
-          color: white; }
-        html body #wall_clock .border_div .three {
-          position: absolute;
-          bottom: 43.5%;
-          right: 7px;
-          text-shadow: 1px 1px 5px white; }
-        html body #wall_clock .border_div .nine {
-          position: absolute;
-          bottom: 43.5%;
-          left: 7px;
-          color: white; }
-        html body #wall_clock .border_div .clock_wrapp {
-          position: absolute; }
-          html body #wall_clock .border_div .clock_wrapp .clock {
-            width: 350px;
-            height: 350px;
-            background-color: transparent;
+          position: relative; }
+          body #wall_clock .border_div .clock_wrapp .clock .dot {
+            background: url("../img/metalic1.jpg");
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 47.3%;
+            left: 47.3%;
             border-radius: 50%;
-            position: relative; }
-            html body #wall_clock .border_div .clock_wrapp .clock .dot {
-              background: url("../img/metalic1.jpg");
-              width: 20px;
-              height: 20px;
-              position: absolute;
-              top: 47.3%;
-              left: 47.3%;
-              border-radius: 50%;
-              z-index: 1; }
-            html body #wall_clock .border_div .clock_wrapp .clock .hand {
-              height: 6px;
-              width: 50%;
-              background: black;
-              position: absolute;
-              top: 49%;
-              -webkit-transform-origin: 100%;
-                      transform-origin: 100%;
-              -webkit-transform: rotate(90deg);
-                      transform: rotate(90deg);
-              -webkit-transition: all 0.05s;
-              transition: all 0.05s;
-              -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-                      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-              -webkit-box-shadow: 1px 0px 10px white;
-                      box-shadow: 1px 0px 10px white; }
+            z-index: 1; }
+          body #wall_clock .border_div .clock_wrapp .clock .hand {
+            height: 6px;
+            width: 50%;
+            background: black;
+            position: absolute;
+            top: 49%;
+            -webkit-transform-origin: 100%;
+                    transform-origin: 100%;
+            -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+            -webkit-transition: all 0.05s;
+            transition: all 0.05s;
+            -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+                    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+            -webkit-box-shadow: 1px 0px 10px white;
+                    box-shadow: 1px 0px 10px white; }
 
 @media screen and (max-width: 991px) {
   body .current h1 {
