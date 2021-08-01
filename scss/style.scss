@@ -142,10 +142,10 @@ body {
   #wall_clock {
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
-    // text-align: center;
+    background: url('../img/wall-2588813_1920.jpg');    // text-align: center;
     @include centeredFlex;
-    // padding-top: 50px;
+    // margin-right: 0;    // padding-top: 50px;
+    top: 10px;
     .border_div {
       width: 450px;
       height: 450px;
@@ -153,10 +153,10 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
       position: relative;
       border-radius: 50%;
       border: 15px solid black;
+      margin-top: -300px;
       .half_clock {
         height: 100%;
         width: 100%;
@@ -284,11 +284,11 @@ body {
       }
     }
     #wall_clock {
-      width: 100%;
-      height: 100vh;
-      background-color: aquamarine;
+    //   width: 100%;
+    //   height: 100vh;
+    //   background-color: aquamarine;
       // text-align: center;
-      @include centeredFlex;
+    //   @include centeredFlex;
       // padding-top: 50px;
       .border_div {
         width: 350px;
