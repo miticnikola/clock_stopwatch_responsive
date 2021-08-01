@@ -9,6 +9,10 @@
 html {
   scroll-behavior: smooth; }
 
+.active {
+  color: goldenrod;
+  text-shadow: 1px 1px 1px black; }
+
 body {
   /* Wall clock */ }
   body header {
@@ -20,15 +24,6 @@ body {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     z-index: 999; }
-    body header:hover {
-      background-color: #000;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
-      body header:hover nav ul li a {
-        color: #fff;
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
-        text-shadow: 1px 1px 1px gray; }
     body header nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -269,7 +264,8 @@ body {
         height: 5px; } }
 @media screen and (max-width: 415px) {
   body .current h1 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    width: 90%; }
   body #stopwatch #stopwatchWrapp {
     width: 99%;
     margin-top: 250px; } }
