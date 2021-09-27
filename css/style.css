@@ -10,8 +10,9 @@ html {
   scroll-behavior: smooth; }
 
 .active {
-  color: goldenrod;
-  text-shadow: 1px 1px 1px black; }
+  color: #fcfce9;
+  text-shadow: 3px 1px 1px black;
+  letter-spacing: 2px; }
 
 body {
   /* Wall clock */ }
@@ -124,7 +125,7 @@ body {
           padding: 10px;
           text-transform: uppercase;
           border: none;
-          border: 2px solid #beac89; }
+          margin: 2px; }
   body #wall_clock {
     width: 100%;
     height: 100vh;
