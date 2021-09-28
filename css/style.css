@@ -133,6 +133,8 @@ body {
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background: url("../img/wall-2588813_1920.jpg");
     background-position: center;
     background-size: cover;
