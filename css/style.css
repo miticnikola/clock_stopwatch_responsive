@@ -236,7 +236,7 @@ body {
                     box-shadow: 1px 0px 10px white; }
 
 @media screen and (max-width: 991px) {
-  body .current h1 {
+  body .current-t h1 {
     font-size: 2.5rem; }
   body #stopwatch #stopwatchWrapp {
     width: 90%; } }
@@ -244,7 +244,7 @@ body {
   body header nav ul li a {
     font-size: 0.9rem;
     padding: 20px 10px; }
-  body .current h1 {
+  body .current-t h1 {
     font-size: 1.9rem;
     -webkit-box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6);
             box-shadow: 0px 0px 17px 10px rgba(101, 224, 108, 0.6); }
@@ -264,11 +264,29 @@ body {
       body #wall_clock .border_div .clock_wrapp .clock .hand {
         height: 5px; } }
 @media screen and (max-width: 415px) {
-  body .current h1 {
+  body .current-t h1 {
     font-size: 1.3rem;
     width: 90%; }
   body #stopwatch #stopwatchWrapp {
     width: 99%;
     margin-top: 250px; } }
+@media screen and (max-width: 320px) {
+  .active {
+    text-shadow: 2px 1px 1px black;
+    letter-spacing: 0px; }
+
+  body header nav ul li a {
+    font-size: 0.8rem; }
+  body #wall_clock .border_div {
+    width: 250px;
+    height: 250px;
+    margin-top: 0px; }
+    body #wall_clock .border_div .num {
+      font-size: 1.4rem; }
+    body #wall_clock .border_div .clock_wrapp .clock {
+      width: 150px;
+      height: 150px; }
+      body #wall_clock .border_div .clock_wrapp .clock .hand {
+        height: 4px; } }
 
 /*# sourceMappingURL=style.css.map */
