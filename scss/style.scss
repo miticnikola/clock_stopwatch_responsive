@@ -30,14 +30,25 @@ $digitFont: "Orbitron", sans-serif;
 html {
   scroll-behavior: smooth;
 }
+// Active for a in nav
 .active {
     color: #fcfce9;
     text-shadow: 3px 1px 1px black;
     letter-spacing: 2px;
 }
+// Active classes for header
+.active-stopwatch {
+  background-color: rgba($color: red, $alpha: 0.5);
+}
+.active-clock {
+  background-color: rgba($color: gray, $alpha: 0.7);
+}
+
   body {
     header {
-      background-color: rgba($color: #fff, $alpha: 0.75);
+      // background-color: rgba($color: #fff, $alpha: 0.75);
+      background-color: rgba($color: green, $alpha: 0.6);
+      text-shadow: 2px 1px 5px white;
       position: fixed;
       width: 100%;
       text-transform: uppercase;

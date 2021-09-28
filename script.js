@@ -1,5 +1,6 @@
 // Active class for nav
 let aTagsNav = document.querySelectorAll('#navigation li a');
+let nav = document.querySelector("header");
 console.log(aTagsNav);
 
 let deleteActive = () => {
@@ -26,6 +27,16 @@ window.onscroll = () => {
         let sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 100) {
             curSect = section.getAttribute('id');
+
+            if(curSect == 'stopwatch'){
+                nav.classList.add('active-stopwatch');
+            } else if(curSect == 'wall_clock'){
+                nav.classList.remove('active-stopwatch');
+                nav.classList.add('active-clock');
+            } else {
+                nav.classList.remove('active-stopwatch');
+                nav.classList.remove('active-clock');
+            }
         }
 
     });

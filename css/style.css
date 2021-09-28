@@ -14,10 +14,17 @@ html {
   text-shadow: 3px 1px 1px black;
   letter-spacing: 2px; }
 
+.active-stopwatch {
+  background-color: rgba(255, 0, 0, 0.5); }
+
+.active-clock {
+  background-color: rgba(128, 128, 128, 0.7); }
+
 body {
   /* Wall clock */ }
   body header {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 128, 0, 0.6);
+    text-shadow: 2px 1px 5px white;
     position: fixed;
     width: 100%;
     text-transform: uppercase;
