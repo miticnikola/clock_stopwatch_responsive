@@ -24,7 +24,7 @@ window.onscroll = () => {
 
     sections.forEach(section => {
         let sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
+        if (pageYOffset >= sectionTop - 100) {
             curSect = section.getAttribute('id');
         }
 
