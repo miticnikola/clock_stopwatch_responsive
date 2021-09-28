@@ -122,12 +122,13 @@ html {
       background-image: url("../img/active-948798_1920.jpg");
       @include paralax;
       @include centeredFlex;
-      align-items: flex-start;
+      // align-items: flex-start;
       #stopwatchWrapp {
         width: 60%;
         background-color: rgba($color: red, $alpha: 0.5);
-        margin: 0 auto;
-        margin-top: 500px;
+        // margin: 0 auto;
+        // margin-top: 500px;
+        margin-top: 20px;
         padding: 10px;
         #stopwatchResult {
           display: flex;
@@ -160,8 +161,12 @@ html {
       width: 100%;
       height: 100vh;
       background: url("../img/wall-2588813_1920.jpg");
+      background-position: center;
+      background-size: cover;
+      // izmeni ovde da bi podesio poziciju pozadine da bude kao zid
       @include centeredFlex;
-      top: 10px;
+      position: relative;
+      // top: 10px;
       .border_div {
         width: 450px;
         height: 450px;
@@ -172,7 +177,7 @@ html {
         position: relative;
         border-radius: 50%;
         border: 15px solid black;
-        margin-top: -300px;
+        // margin-top: -300px;
         .half_clock {
           height: 100%;
           width: 100%;
@@ -303,7 +308,7 @@ html {
         width: 350px;
         height: 350px;
         border: 7px solid black;
-        margin-top: -120px;
+        // margin-top: -120px;
         .num {
           font-size: 1.5rem;
         }
@@ -336,7 +341,8 @@ html {
     #stopwatch {
       #stopwatchWrapp {
         width: 99%;
-        margin-top: 250px; //mozda i za 567px da se prebaci ovaj margin top
+        // margin-top: 250px; //mozda i za 567px da se prebaci ovaj margin top
+
       }
     }
   }
@@ -363,7 +369,7 @@ html {
       .border_div {
         width: 250px;
         height: 250px;
-        margin-top: 0px;
+        // margin-top: 0px;
         .num {
           font-size: 1.4rem;
         }

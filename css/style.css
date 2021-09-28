@@ -97,15 +97,11 @@ body {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: center; }
     body #stopwatch #stopwatchWrapp {
       width: 60%;
       background-color: rgba(255, 0, 0, 0.5);
-      margin: 0 auto;
-      margin-top: 500px;
+      margin-top: 20px;
       padding: 10px; }
       body #stopwatch #stopwatchWrapp #stopwatchResult {
         display: -webkit-box;
@@ -137,6 +133,8 @@ body {
     width: 100%;
     height: 100vh;
     background: url("../img/wall-2588813_1920.jpg");
+    background-position: center;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -146,7 +144,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 10px; }
+    position: relative; }
     body #wall_clock .border_div {
       width: 450px;
       height: 450px;
@@ -162,8 +160,7 @@ body {
               align-items: center;
       position: relative;
       border-radius: 50%;
-      border: 15px solid black;
-      margin-top: -300px; }
+      border: 15px solid black; }
       body #wall_clock .border_div .half_clock {
         height: 100%;
         width: 100%;
@@ -258,8 +255,7 @@ body {
   body #wall_clock .border_div {
     width: 350px;
     height: 350px;
-    border: 7px solid black;
-    margin-top: -120px; }
+    border: 7px solid black; }
     body #wall_clock .border_div .num {
       font-size: 1.5rem; }
     body #wall_clock .border_div .clock_wrapp .clock {
@@ -275,8 +271,7 @@ body {
     font-size: 1.3rem;
     width: 90%; }
   body #stopwatch #stopwatchWrapp {
-    width: 99%;
-    margin-top: 250px; } }
+    width: 99%; } }
 @media screen and (max-width: 320px) {
   .active {
     text-shadow: 2px 1px 1px black;
@@ -286,8 +281,7 @@ body {
     font-size: 0.8rem; }
   body #wall_clock .border_div {
     width: 250px;
-    height: 250px;
-    margin-top: 0px; }
+    height: 250px; }
     body #wall_clock .border_div .num {
       font-size: 1.4rem; }
     body #wall_clock .border_div .clock_wrapp .clock {
