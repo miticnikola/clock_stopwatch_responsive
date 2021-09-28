@@ -17,6 +17,27 @@ aTagsNav.forEach(a => {
     });
 });
 
+// Add active in nav with scrolling
+let sections = document.querySelectorAll('.section');
+window.onscroll = () => {
+    var curSect = "";
+
+    sections.forEach(section => {
+        let sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+            curSect = section.getAttribute('id');
+        }
+
+    });
+
+    aTagsNav.forEach(a => {
+        a.classList.remove("active");
+        if (a.classList.contains(curSect)) {
+            a.classList.add("active");
+        }
+    });
+};
+
 
 // Current time
 let h1CurrentTime = document.getElementById('currentTime');
@@ -76,10 +97,7 @@ btnStart.addEventListener('click', () => {
                     let hours = (minutes - (minutes1 % 60)) / 60;
                     h3StopwatchResult.innerHTML = `${hours}h : ${minutes1}m : ${seconds}s`;
                 }
-
             }
-
-
         }, 1000);
     }
 });

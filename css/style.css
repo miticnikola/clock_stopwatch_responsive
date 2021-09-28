@@ -44,7 +44,7 @@ body {
           padding: 20px;
           color: #000;
           font-size: 1.3rem; }
-  body .current {
+  body .current-t {
     background-image: url("../img/matrix-356024_1920.jpg");
     min-height: 100vh;
     background-attachment: fixed;
@@ -60,7 +60,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    body .current h1 {
+    body .current-t h1 {
       text-align: center;
       font-size: 4rem;
       font-family: "Orbitron", sans-serif;
@@ -70,7 +70,7 @@ body {
       text-shadow: 1px 2px 2px #65e06c;
       -webkit-box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6);
       box-shadow: 0px 0px 17px 15px rgba(101, 224, 108, 0.6); }
-      body .current h1 #currentTime {
+      body .current-t h1 #currentTime {
         font-family: "Orbitron", sans-serif;
         font-weight: 900;
         color: #000;

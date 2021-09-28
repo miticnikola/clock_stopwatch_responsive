@@ -83,7 +83,7 @@ html {
     }
 
     // Digital current time
-    .current {
+    .current-t {
       background-image: url("../img/matrix-356024_1920.jpg");
       @include paralax;
       @include centeredFlex;
