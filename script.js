@@ -89,7 +89,7 @@ let btnReset = document.getElementById("reset");
 
 let clock = null;
 let counter = 0;
-h3StopwatchResult.innerHTML = `0`;
+h3StopwatchResult.innerHTML = `0s`;
 
 btnStart.addEventListener('click', () => {
     if (clock == null) {
@@ -127,7 +127,7 @@ btnReset.addEventListener('click', () => {
     counter = 0;
     clearInterval(clock);
     clock = null;
-    h3StopwatchResult.innerHTML = ` `;
+    h3StopwatchResult.innerHTML = `0s`;
 });
 
 // Wall clock
@@ -140,10 +140,11 @@ setInterval(() => {
 
     let sec = date.getSeconds();
     let secDeg = sec / 60 * 360 + 90;
-    let hour = date.getHours() + 1;
+    let hour = date.getHours();
+    //ovde proveriti prikaz vremena za am i pm
     let min = date.getMinutes();
 
-    let hourDeg = hour / 12 * 360 + 90;
+    let hourDeg = hour / 12 * 360 + 92;
     let minDeg = min / 60 * 360 + 90;
 
     divSecond.style.transform = `rotate(${secDeg}deg)`;
