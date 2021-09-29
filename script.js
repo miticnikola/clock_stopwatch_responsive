@@ -141,6 +141,9 @@ setInterval(() => {
     let sec = date.getSeconds();
     let secDeg = sec / 60 * 360 + 90;
     let hour = date.getHours();
+    // let hour1 = date.getHours() + 1;
+
+    // console.log(hour, hour1);
     //ovde proveriti prikaz vremena za am i pm
     let min = date.getMinutes();
 

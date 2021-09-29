@@ -292,5 +292,20 @@ body {
       height: 150px; }
       body #wall_clock .border_div .clock_wrapp .clock .hand {
         height: 4px; } }
+@media screen and (max-width: 280px) {
+  body header nav ul li a {
+    font-size: 0.6rem; }
+  body .current-t h1 {
+    font-size: 0.8rem; }
+  body #wall_clock .border_div {
+    width: 220px;
+    height: 220px; }
+    body #wall_clock .border_div .num {
+      font-size: 1.2rem; }
+    body #wall_clock .border_div .clock_wrapp .clock {
+      width: 120px;
+      height: 120px; }
+      body #wall_clock .border_div .clock_wrapp .clock .hand {
+        height: 3px; } }
 
 /*# sourceMappingURL=style.css.map */
