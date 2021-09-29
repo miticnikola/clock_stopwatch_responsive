@@ -28,9 +28,9 @@ window.onscroll = () => {
         if (pageYOffset >= sectionTop - 100) {
             curSect = section.getAttribute('id');
 
-            if(curSect == 'stopwatch'){
+            if (curSect == 'stopwatch') {
                 nav.classList.add('active-stopwatch');
-            } else if(curSect == 'wall_clock'){
+            } else if (curSect == 'wall_clock') {
                 nav.classList.remove('active-stopwatch');
                 nav.classList.add('active-clock');
             } else {
@@ -141,16 +141,38 @@ setInterval(() => {
     let sec = date.getSeconds();
     let secDeg = sec / 60 * 360 + 90;
     let hour = date.getHours();
-    // let hour1 = date.getHours() + 1;
-
-    // console.log(hour, hour1);
-    //ovde proveriti prikaz vremena za am i pm
     let min = date.getMinutes();
 
-    let hourDeg = hour / 12 * 360 + 92;
+    let hourDeg = hour / 12 * 360 + 90;
     let minDeg = min / 60 * 360 + 90;
 
-    divSecond.style.transform = `rotate(${secDeg}deg)`;
-    divHour.style.transform = `rotate(${hourDeg}deg)`;
-    divMinute.style.transform = `rotate(${minDeg}deg)`;
+    
+    
+    // if(hour < hour + 1){
+    //     setInterval(() => {
+    //         hourDeg += 0.1;
+    //     }, 1000);
+    // }
+    
+    // setInterval (() => {
+        //     if(hourDeg <= hourDeg + 0.1){
+            //         hourDeg += 0.1;
+            //     }
+            //     console.log(hourDeg);
+            //     divHour.style.transform = `rotate(${hourDeg}deg)`;
+            // }, 1000);    
+
+
+            // while(hour < 24){
+            //     hourDeg += 0.1;
+            //     hour++;
+            //         console.log(hourDeg);
+            //     divHour.style.transform = `rotate(${hourDeg}deg)`;
+            // }
+            
+            divSecond.style.transform = `rotate(${secDeg}deg)`;
+            divMinute.style.transform = `rotate(${minDeg}deg)`;
+            divHour.style.transform = `rotate(${hourDeg}deg)`;
+
+
 }, 1000);
