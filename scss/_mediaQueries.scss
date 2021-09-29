@@ -1,0 +1,153 @@
+@media screen and (max-width: 991px) {
+    body {
+      .current-t {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      #stopwatch {
+        #stopwatchWrapp {
+          width: 90%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 567px) {
+    body {
+      header {
+        nav {
+          ul {
+            li {
+              a {
+                font-size: 0.9rem;
+                padding: 20px 10px;
+              }
+            }
+          }
+        }
+      }
+      .current-t {
+        h1 {
+          font-size: 1.9rem;
+          box-shadow: 0px 0px 17px 10px rgba($color: $light-green, $alpha: 0.6);
+        }
+      }
+      #wall_clock {
+        .border_div {
+          width: 350px;
+          height: 350px;
+          border: 7px solid $black;
+          .num {
+            font-size: 1.5rem;
+          }
+          .clock_wrapp {
+            .clock {
+              width: 250px;
+              height: 250px;
+              .dot {
+                width: 10px;
+                height: 10px;
+              }
+              .hand {
+                height: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 415px) {
+    body {
+      .current-t {
+        h1 {
+          font-size: 1.3rem;
+          width: 90%;
+        }
+      }
+      #stopwatch {
+        #stopwatchWrapp {
+          width: 99%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .active {
+      text-shadow: 2px 1px 1px $black;
+      letter-spacing: 0px;
+    }
+    body {
+      header {
+        nav {
+          ul {
+            li {
+              a {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+      #wall_clock {
+        .border_div {
+          width: 250px;
+          height: 250px;
+          .num {
+            font-size: 1.4rem;
+          }
+          .clock_wrapp {
+            .clock {
+              width: 150px;
+              height: 150px;
+              .hand {
+                height: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    body {
+      header {
+        nav {
+          ul {
+            li {
+              a {
+                font-size: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+      .current-t {
+        h1 {
+          font-size: 0.8rem;
+        }
+      }
+      #wall_clock {
+        .border_div {
+          width: 220px;
+          height: 220px;
+          .num {
+            font-size: 1.2rem;
+          }
+          .clock_wrapp {
+            .clock {
+              width: 120px;
+              height: 120px;
+              .hand {
+                height: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

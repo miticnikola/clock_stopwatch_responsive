@@ -11,7 +11,7 @@ html {
 
 .active {
   color: #fcfce9;
-  text-shadow: 3px 1px 1px black;
+  text-shadow: 3px 1px 1px #000000;
   letter-spacing: 2px; }
 
 .active-stopwatch {
@@ -24,7 +24,7 @@ body {
   /* Wall clock */ }
   body header {
     background-color: rgba(0, 128, 0, 0.6);
-    text-shadow: 2px 1px 5px white;
+    text-shadow: 2px 1px 5px #ffffff;
     position: fixed;
     width: 100%;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ body {
           overflow: hidden;
           display: block;
           padding: 20px;
-          color: #000;
+          color: #000000;
           font-size: 1.3rem; }
   body .current-t {
     background-image: url("../img/matrix-356024_1920.jpg");
@@ -80,7 +80,7 @@ body {
       body .current-t h1 #currentTime {
         font-family: "Orbitron", sans-serif;
         font-weight: 900;
-        color: #000;
+        color: #000000;
         letter-spacing: 4px; }
   body #stopwatch {
     background-image: url("../img/active-948798_1920.jpg");
@@ -114,7 +114,7 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         height: 50px;
-        background-color: white;
+        background-color: #ffffff;
         margin-bottom: 10px;
         font-size: 2rem;
         font-family: "Orbitron", sans-serif; }
@@ -163,7 +163,7 @@ body {
               align-items: center;
       position: relative;
       border-radius: 50%;
-      border: 15px solid black; }
+      border: 15px solid #000000; }
       body #wall_clock .border_div .half_clock {
         height: 100%;
         width: 100%;
@@ -171,8 +171,8 @@ body {
         position: relative;
         border-radius: 50%;
         overflow: hidden;
-        -webkit-box-shadow: 1px 1px 10px white;
-                box-shadow: 1px 1px 10px white; }
+        -webkit-box-shadow: 1px 1px 10px #ffffff;
+                box-shadow: 1px 1px 10px #ffffff; }
         body #wall_clock .border_div .half_clock .half_of_half {
           width: 52.5%;
           background-color: rgba(0, 0, 0, 0.87);
@@ -197,17 +197,17 @@ body {
         position: absolute;
         bottom: -5px;
         left: 48.5%;
-        color: white; }
+        color: #ffffff; }
       body #wall_clock .border_div .three {
         position: absolute;
         bottom: 43.5%;
         right: 7px;
-        text-shadow: 1px 1px 5px white; }
+        text-shadow: 1px 1px 5px #ffffff; }
       body #wall_clock .border_div .nine {
         position: absolute;
         bottom: 43.5%;
         left: 7px;
-        color: white; }
+        color: #ffffff; }
       body #wall_clock .border_div .clock_wrapp {
         position: absolute; }
         body #wall_clock .border_div .clock_wrapp .clock {
@@ -228,7 +228,7 @@ body {
           body #wall_clock .border_div .clock_wrapp .clock .hand {
             height: 6px;
             width: 50%;
-            background: black;
+            background: #000000;
             position: absolute;
             top: 49%;
             -webkit-transform-origin: 100%;
@@ -239,8 +239,8 @@ body {
             transition: all 0.05s;
             -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
                     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-            -webkit-box-shadow: 1px 0px 10px white;
-                    box-shadow: 1px 0px 10px white; }
+            -webkit-box-shadow: 1px 0px 10px #ffffff;
+                    box-shadow: 1px 0px 10px #ffffff; }
 
 @media screen and (max-width: 991px) {
   body .current-t h1 {
@@ -258,7 +258,7 @@ body {
   body #wall_clock .border_div {
     width: 350px;
     height: 350px;
-    border: 7px solid black; }
+    border: 7px solid #000000; }
     body #wall_clock .border_div .num {
       font-size: 1.5rem; }
     body #wall_clock .border_div .clock_wrapp .clock {
@@ -277,7 +277,7 @@ body {
     width: 99%; } }
 @media screen and (max-width: 320px) {
   .active {
-    text-shadow: 2px 1px 1px black;
+    text-shadow: 2px 1px 1px #000000;
     letter-spacing: 0px; }
 
   body header nav ul li a {
