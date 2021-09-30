@@ -139,40 +139,17 @@ setInterval(() => {
     let date = new Date();
 
     let sec = date.getSeconds();
-    let secDeg = sec / 60 * 360 + 90;
     let hour = date.getHours();
     let min = date.getMinutes();
 
-    let hourDeg = hour / 12 * 360 + 90;
-    let minDeg = min / 60 * 360 + 90;
+    let secDeg = sec / 60 * 360 + 90;
+    let minDeg = min / 60 * 360 + sec / 60 * 6 + 90;
+    let hourDeg = hour / 12 * 360 + min / 60 * 30 + 90;
 
-    
-    
-    // if(hour < hour + 1){
-    //     setInterval(() => {
-    //         hourDeg += 0.1;
-    //     }, 1000);
-    // }
-    
-    // setInterval (() => {
-        //     if(hourDeg <= hourDeg + 0.1){
-            //         hourDeg += 0.1;
-            //     }
-            //     console.log(hourDeg);
-            //     divHour.style.transform = `rotate(${hourDeg}deg)`;
-            // }, 1000);    
+    console.log(hourDeg);
 
-
-            // while(hour < 24){
-            //     hourDeg += 0.1;
-            //     hour++;
-            //         console.log(hourDeg);
-            //     divHour.style.transform = `rotate(${hourDeg}deg)`;
-            // }
-            
-            divSecond.style.transform = `rotate(${secDeg}deg)`;
-            divMinute.style.transform = `rotate(${minDeg}deg)`;
-            divHour.style.transform = `rotate(${hourDeg}deg)`;
-
+    divSecond.style.transform = `rotate(${secDeg}deg)`;
+    divMinute.style.transform = `rotate(${minDeg}deg)`;
+    divHour.style.transform = `rotate(${hourDeg}deg)`;
 
 }, 1000);
