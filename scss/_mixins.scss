@@ -1,13 +1,12 @@
 @mixin paralax {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @mixin centeredFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

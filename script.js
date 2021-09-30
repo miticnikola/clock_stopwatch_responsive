@@ -1,7 +1,6 @@
 // Active class for nav
 let aTagsNav = document.querySelectorAll('#navigation li a');
 let nav = document.querySelector("header");
-console.log(aTagsNav);
 
 let deleteActive = () => {
     aTagsNav.forEach(a => {
@@ -48,7 +47,6 @@ window.onscroll = () => {
         }
     });
 };
-
 
 // Current time
 let h1CurrentTime = document.getElementById('currentTime');
@@ -120,7 +118,6 @@ btnPause.addEventListener('click', () => {
         clearInterval(clock);
         clock = null;
     }
-
 });
 
 btnReset.addEventListener('click', () => {
@@ -145,8 +142,6 @@ setInterval(() => {
     let secDeg = sec / 60 * 360 + 90;
     let minDeg = min / 60 * 360 + sec / 60 * 6 + 90;
     let hourDeg = hour / 12 * 360 + min / 60 * 30 + 90;
-
-    console.log(hourDeg);
 
     divSecond.style.transform = `rotate(${secDeg}deg)`;
     divMinute.style.transform = `rotate(${minDeg}deg)`;
